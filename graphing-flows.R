@@ -9,7 +9,7 @@ library(dataRetrieval)
 ## https://owi.usgs.gov/R/dataRetrieval.html#1
 
 siteNumber <- "02347500" ##
-pCode <- c('00065', '00060') ## list available here: 
+pCode <- c('00065', '00065') ## list available here: 
 startDate <- "2018-03-14"
 endDate <- "2019-03-14"
 
@@ -27,6 +27,6 @@ ts <- ggplot(data = dat,
              aes(dateTime, GH_Inst)) +
   geom_line() + 
   xlab("") +
-  ylab(parameterInfo$parameter_desc) +
+  ylab(parameterInfo$variableName) +
   ggtitle(siteInfo$station_nm)
 ts
