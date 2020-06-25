@@ -30,3 +30,6 @@ ts <- ggplot(data = dat,
   ylab(parameterInfo$variableName) +
   ggtitle(siteInfo$station_nm)
 ts
+
+## river music!
+# https://www.kunc.org/post/can-river-play-violin-it-can-researchers-help#stream/0
